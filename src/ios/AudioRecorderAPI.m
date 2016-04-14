@@ -79,7 +79,7 @@
 - (void)resume:(CDVInvokedUrlCommand*)command {
   _command = command;
   NSLog(@"resumeRecording");
-  [recorder resume];
+  [recorder record];
   NSLog(@"resumed");
 }
 
