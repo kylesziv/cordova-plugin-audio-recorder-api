@@ -12,6 +12,8 @@
 
 - (void)record:(CDVInvokedUrlCommand*)command;
 - (void)stop:(CDVInvokedUrlCommand*)command;
+- (void)pause:(CDVInvokedUrlCommand*)command;
+- (void)resume:(CDVInvokedUrlCommand*)command;
 - (void)playback:(CDVInvokedUrlCommand*)command;
 
 @end

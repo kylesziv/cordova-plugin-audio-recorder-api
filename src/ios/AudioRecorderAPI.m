@@ -69,6 +69,20 @@
   NSLog(@"stopped");
 }
 
+- (void)pause:(CDVInvokedUrlCommand*)command {
+  _command = command;
+  NSLog(@"pauseRecording");
+  [recorder pause];
+  NSLog(@"paused");
+}
+
+- (void)resume:(CDVInvokedUrlCommand*)command {
+  _command = command;
+  NSLog(@"resumeRecording");
+  [recorder resume];
+  NSLog(@"resumed");
+}
+
 - (void)playback:(CDVInvokedUrlCommand*)command {
   _command = command;
   [self.commandDelegate runInBackground:^{
